@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Dux from '../../hoc/Dux';
+import Burger from '../../components/Burger/Burger';
 
 class BurgerBuilder extends Component {
 
     render() {
         return (
            <Dux>
-               <div>Burger</div>
+               <Burger />
                <div>Burger Building Controls</div>
            </Dux>
         );
