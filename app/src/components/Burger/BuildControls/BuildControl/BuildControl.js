@@ -4,7 +4,7 @@ const buildControl = (props) =>(
     <div className='BuildControl'>
         <div className='Label'>{props.label} </div>
         <div className='Less'>Less</div>
-        <div className='More'>More</div>
+        <div className='More' onClick={props.added}>More</div>
     </div>
 );
 
