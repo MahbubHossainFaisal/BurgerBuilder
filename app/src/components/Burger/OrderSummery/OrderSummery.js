@@ -11,14 +11,14 @@ const orderSummery = (props)=> {
         </li>);
     });
     return (
-        <Dux>
-            <h3> Your Order </h3>
-            <p> A delicious burger with the following ingredients.</p>
-            <ul>
-                {ingredientSummery}
-            </ul>
-            <p>Continue to Checkout?</p>
-        </Dux>
+      <Dux>
+        <h3> Your Order </h3>
+        <p> A delicious burger with the following ingredients.</p>
+        <ul>{ingredientSummery}</ul>
+        <p>Continue to Checkout?</p>
+        <button>CANCEL</button>
+        <button>CONTINUE</button>
+      </Dux>
     );
 }
 

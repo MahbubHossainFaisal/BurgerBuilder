@@ -16,6 +16,8 @@ const modal = (props) => (
     >
       {props.children}
     </div>
+
+   
   </Dux>
 );
 
