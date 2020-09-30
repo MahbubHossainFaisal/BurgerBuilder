@@ -1,12 +1,12 @@
 import React from 'react';
-import './Toolbar.css'
-
+import './Toolbar.css';
+import Sign from '../../Sign/Sign';
 const Toolbar = (props) => (
 
     <header className="Toolbar">
         <div>Menu</div>
 
-        <div>Logo</div>
+       <Sign />
         <nav>
            ...
         </nav>
