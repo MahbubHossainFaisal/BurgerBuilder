@@ -1,11 +1,12 @@
 import React from 'react';
 import Dux from '../../hoc/Dux';
 import './Layout.css';
+import Toolbar from '../Navigation/Toolbar/Toolbar'
 
 const layout = (props) => (
 
   <Dux>
-        <div >Toolbar,Side Drawyer,Backdrop</div>
+        <Toolbar />
         <main className='Layout-content'>
             {props.children}
         </main>
