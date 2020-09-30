@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Dux from '../../../hoc/Dux';
+import Button from '../../UI/Button/Button'
 
 const orderSummery = (props)=> {
     const ingredientSummery= Object.keys(props.ingredients)
@@ -16,8 +17,8 @@ const orderSummery = (props)=> {
         <p> A delicious burger with the following ingredients.</p>
         <ul>{ingredientSummery}</ul>
         <p>Continue to Checkout?</p>
-        <button>CANCEL</button>
-        <button>CONTINUE</button>
+        <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
+        <Button btnType="Success" clicked= {props.purchaseContinued}>CONTINUE</Button>
       </Dux>
     );
 }
