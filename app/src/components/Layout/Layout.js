@@ -1,19 +1,32 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Dux from '../../hoc/Dux';
 import './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 
-const layout = (props) => (
+class Layout extends Component{
 
-  <Dux>
-   
+
+  state = {
+    showSideDrawer: true
+  }
+  sideDrawerClosedHandler = () =>{
+    this.setState({showSideDrawer:false});
+  }
+  
+     render(){
+       return(
+      <Dux>
         <Toolbar />
-    <SideDrawer />
+        <SideDrawer open={this.state.showSideDrawer} closed ={this.sideDrawerClosedHandler} />
         <main className='Layout-content'>
-            {props.children}
+            {this.props.children}
         </main>
-  </Dux>
-);
+      </Dux>
+       );
+     }
+    
+};
 
-export default layout;
+
+export default Layout;
