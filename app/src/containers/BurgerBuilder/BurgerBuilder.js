@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Dux from '../../hoc/Dux';
+import Dux from '../../hoc/Dux/Dux';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';

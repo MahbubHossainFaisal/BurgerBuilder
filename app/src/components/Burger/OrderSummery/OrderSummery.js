@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Dux from '../../../hoc/Dux';
+import Dux from '../../../hoc/Dux/Dux';
 import Button from '../../UI/Button/Button'
 
 class OrderSummery extends Component{

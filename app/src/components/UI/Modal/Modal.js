@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './Modal.css';
-import Dux from '../../../hoc/Dux';
+import Dux from '../../../hoc/Dux/Dux';
 import Backdrop from '../Backdrop/Backdrop';
 
 
